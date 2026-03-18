@@ -6,117 +6,104 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		DEAD3A9B2F6AACF600B49ED9 /* DrawingSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEAD3A9A2F6AACF600B49ED9 /* DrawingSDK.framework */; };
+		DEAD3A9D2F6AAD2C00B49ED9 /* AnyLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAD3A9C2F6AAD2C00B49ED9 /* AnyLine.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
-		DEBCE3022F6AD31600A8DEF6 /* DrawingSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DrawingSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEAD3A932F6AAC7900B49ED9 /* AnyLinePlugin.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnyLinePlugin.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEAD3A9A2F6AACF600B49ED9 /* DrawingSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DrawingSDK.framework; sourceTree = "<group>"; };
+		DEAD3A9C2F6AAD2C00B49ED9 /* AnyLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyLine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		DEBCE3042F6AD31600A8DEF6 /* DrawingSDK */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = DrawingSDK;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
-
 /* Begin PBXFrameworksBuildPhase section */
-		DEBCE2FF2F6AD31600A8DEF6 /* Frameworks */ = {
+		DEAD3A902F6AAC7900B49ED9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEAD3A9B2F6AACF600B49ED9 /* DrawingSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DEBCE2F82F6AD31600A8DEF6 = {
+		DEAD3A8A2F6AAC7900B49ED9 = {
 			isa = PBXGroup;
 			children = (
-				DEBCE3042F6AD31600A8DEF6 /* DrawingSDK */,
-				DEBCE3032F6AD31600A8DEF6 /* Products */,
+				DEAD3A9C2F6AAD2C00B49ED9 /* AnyLine.swift */,
+				DEAD3A9A2F6AACF600B49ED9 /* DrawingSDK.framework */,
+				DEAD3A942F6AAC7900B49ED9 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		DEBCE3032F6AD31600A8DEF6 /* Products */ = {
+		DEAD3A942F6AAC7900B49ED9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DEBCE3022F6AD31600A8DEF6 /* DrawingSDK.framework */,
+				DEAD3A932F6AAC7900B49ED9 /* AnyLinePlugin.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		DEBCE2FD2F6AD31600A8DEF6 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
-		DEBCE3012F6AD31600A8DEF6 /* DrawingSDK */ = {
+		DEAD3A922F6AAC7900B49ED9 /* AnyLinePlugin */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DEBCE30B2F6AD31600A8DEF6 /* Build configuration list for PBXNativeTarget "DrawingSDK" */;
+			buildConfigurationList = DEAD3A972F6AAC7900B49ED9 /* Build configuration list for PBXNativeTarget "AnyLinePlugin" */;
 			buildPhases = (
-				DEBCE2FD2F6AD31600A8DEF6 /* Headers */,
-				DEBCE2FE2F6AD31600A8DEF6 /* Sources */,
-				DEBCE2FF2F6AD31600A8DEF6 /* Frameworks */,
-				DEBCE3002F6AD31600A8DEF6 /* Resources */,
+				DEAD3A8F2F6AAC7900B49ED9 /* Sources */,
+				DEAD3A902F6AAC7900B49ED9 /* Frameworks */,
+				DEAD3A912F6AAC7900B49ED9 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				DEBCE3042F6AD31600A8DEF6 /* DrawingSDK */,
-			);
-			name = DrawingSDK;
+			name = AnyLinePlugin;
 			packageProductDependencies = (
 			);
-			productName = DrawingSDK;
-			productReference = DEBCE3022F6AD31600A8DEF6 /* DrawingSDK.framework */;
-			productType = "com.apple.product-type.framework";
+			productName = AnyLinePlugin;
+			productReference = DEAD3A932F6AAC7900B49ED9 /* AnyLinePlugin.bundle */;
+			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		DEBCE2F92F6AD31600A8DEF6 /* Project object */ = {
+		DEAD3A8B2F6AAC7900B49ED9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 2610;
 				LastUpgradeCheck = 2610;
 				TargetAttributes = {
-					DEBCE3012F6AD31600A8DEF6 = {
+					DEAD3A922F6AAC7900B49ED9 = {
 						CreatedOnToolsVersion = 26.1.1;
+						LastSwiftMigration = 2610;
 					};
 				};
 			};
-			buildConfigurationList = DEBCE2FC2F6AD31600A8DEF6 /* Build configuration list for PBXProject "DrawingSDK" */;
+			buildConfigurationList = DEAD3A8E2F6AAC7900B49ED9 /* Build configuration list for PBXProject "AnyLinePlugin" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = DEBCE2F82F6AD31600A8DEF6;
+			mainGroup = DEAD3A8A2F6AAC7900B49ED9;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = DEBCE3032F6AD31600A8DEF6 /* Products */;
+			productRefGroup = DEAD3A942F6AAC7900B49ED9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DEBCE3012F6AD31600A8DEF6 /* DrawingSDK */,
+				DEAD3A922F6AAC7900B49ED9 /* AnyLinePlugin */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		DEBCE3002F6AD31600A8DEF6 /* Resources */ = {
+		DEAD3A912F6AAC7900B49ED9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -126,17 +113,18 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		DEBCE2FE2F6AD31600A8DEF6 /* Sources */ = {
+		DEAD3A8F2F6AAC7900B49ED9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEAD3A9D2F6AAD2C00B49ED9 /* AnyLine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		DEBCE3092F6AD31600A8DEF6 /* Debug */ = {
+		DEAD3A952F6AAC7900B49ED9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -170,7 +158,6 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = Y9UBM27R4F;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -196,14 +183,10 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		DEBCE30A2F6AD31600A8DEF6 /* Release */ = {
+		DEAD3A962F6AAC7900B49ED9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -237,7 +220,6 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = Y9UBM27R4F;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -256,106 +238,86 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		DEBCE30C2F6AD31600A8DEF6 /* Debug */ = {
+		DEAD3A982F6AAC7900B49ED9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Y9UBM27R4F;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
+				INFOPLIST_KEY_NSPrincipalClass = AnyLinePlugin;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MARKETING_VERSION = 1.0;
-				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
-				PRODUCT_BUNDLE_IDENTIFIER = german.DrawingSDK;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = german.AnyLinePlugin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_INSTALL_MODULE = YES;
-				SWIFT_INSTALL_OBJC_HEADER = NO;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
 		};
-		DEBCE30D2F6AD31600A8DEF6 /* Release */ = {
+		DEAD3A992F6AAC7900B49ED9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Y9UBM27R4F;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
+				INFOPLIST_KEY_NSPrincipalClass = AnyLinePlugin;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MARKETING_VERSION = 1.0;
-				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
-				PRODUCT_BUNDLE_IDENTIFIER = german.DrawingSDK;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = german.AnyLinePlugin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_INSTALL_MODULE = YES;
-				SWIFT_INSTALL_OBJC_HEADER = NO;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DEBCE2FC2F6AD31600A8DEF6 /* Build configuration list for PBXProject "DrawingSDK" */ = {
+		DEAD3A8E2F6AAC7900B49ED9 /* Build configuration list for PBXProject "AnyLinePlugin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DEBCE3092F6AD31600A8DEF6 /* Debug */,
-				DEBCE30A2F6AD31600A8DEF6 /* Release */,
+				DEAD3A952F6AAC7900B49ED9 /* Debug */,
+				DEAD3A962F6AAC7900B49ED9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DEBCE30B2F6AD31600A8DEF6 /* Build configuration list for PBXNativeTarget "DrawingSDK" */ = {
+		DEAD3A972F6AAC7900B49ED9 /* Build configuration list for PBXNativeTarget "AnyLinePlugin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DEBCE30C2F6AD31600A8DEF6 /* Debug */,
-				DEBCE30D2F6AD31600A8DEF6 /* Release */,
+				DEAD3A982F6AAC7900B49ED9 /* Debug */,
+				DEAD3A992F6AAC7900B49ED9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = DEBCE2F92F6AD31600A8DEF6 /* Project object */;
+	rootObject = DEAD3A8B2F6AAC7900B49ED9 /* Project object */;
 }

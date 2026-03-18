@@ -1,0 +1,22 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.2.1 effective-5.10 (swiftlang-6.2.1.4.8 clang-1700.4.4.1)
+// swift-module-flags: -target arm64-apple-macos26.1 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name DrawingSDK
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.1
+import Swift
+import SwiftUI
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public protocol Drawable {
+  var color: SwiftUICore.Color { get set }
+  var lineWidth: CoreFoundation.CGFloat { get set }
+  func path() -> SwiftUICore.Path
+  func contains(_ point: CoreFoundation.CGPoint) -> Swift.Bool
+  mutating func move(by offset: CoreFoundation.CGSize)
+}
+public protocol DrawingPlugin {
+  var name: Swift.String { get }
+  var iconName: Swift.String { get }
+  func create(at point: CoreFoundation.CGPoint, color: SwiftUICore.Color, width: CoreFoundation.CGFloat) -> any DrawingSDK.Drawable
+  func update(_ shape: any DrawingSDK.Drawable, to point: CoreFoundation.CGPoint) -> any DrawingSDK.Drawable
+}

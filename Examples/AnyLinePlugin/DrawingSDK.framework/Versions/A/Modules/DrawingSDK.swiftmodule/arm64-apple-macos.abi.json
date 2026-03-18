@@ -1,0 +1,498 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "DrawingSDK",
+    "printedName": "DrawingSDK",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "DrawingSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Drawable",
+        "printedName": "Drawable",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "color",
+            "printedName": "color",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Color",
+                "printedName": "SwiftUI.Color",
+                "usr": "s:7SwiftUI5ColorV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10DrawingSDK8DrawableP5color7SwiftUI5ColorVvp",
+            "mangledName": "$s10DrawingSDK8DrawableP5color7SwiftUI5ColorVvp",
+            "moduleName": "DrawingSDK",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Color",
+                    "printedName": "SwiftUI.Color",
+                    "usr": "s:7SwiftUI5ColorV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10DrawingSDK8DrawableP5color7SwiftUI5ColorVvg",
+                "mangledName": "$s10DrawingSDK8DrawableP5color7SwiftUI5ColorVvg",
+                "moduleName": "DrawingSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : DrawingSDK.Drawable>",
+                "sugared_genericSig": "<Self where Self : DrawingSDK.Drawable>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Color",
+                    "printedName": "SwiftUI.Color",
+                    "usr": "s:7SwiftUI5ColorV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10DrawingSDK8DrawableP5color7SwiftUI5ColorVvs",
+                "mangledName": "$s10DrawingSDK8DrawableP5color7SwiftUI5ColorVvs",
+                "moduleName": "DrawingSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : DrawingSDK.Drawable>",
+                "sugared_genericSig": "<Self where Self : DrawingSDK.Drawable>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10DrawingSDK8DrawableP5color7SwiftUI5ColorVvM",
+                "mangledName": "$s10DrawingSDK8DrawableP5color7SwiftUI5ColorVvM",
+                "moduleName": "DrawingSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : DrawingSDK.Drawable>",
+                "sugared_genericSig": "<Self where Self : DrawingSDK.Drawable>",
+                "protocolReq": true,
+                "implicit": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "lineWidth",
+            "printedName": "lineWidth",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10DrawingSDK8DrawableP9lineWidth14CoreFoundation7CGFloatVvp",
+            "mangledName": "$s10DrawingSDK8DrawableP9lineWidth12CoreGraphics7CGFloatVvp",
+            "moduleName": "DrawingSDK",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10DrawingSDK8DrawableP9lineWidth14CoreFoundation7CGFloatVvg",
+                "mangledName": "$s10DrawingSDK8DrawableP9lineWidth12CoreGraphics7CGFloatVvg",
+                "moduleName": "DrawingSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : DrawingSDK.Drawable>",
+                "sugared_genericSig": "<Self where Self : DrawingSDK.Drawable>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10DrawingSDK8DrawableP9lineWidth14CoreFoundation7CGFloatVvs",
+                "mangledName": "$s10DrawingSDK8DrawableP9lineWidth12CoreGraphics7CGFloatVvs",
+                "moduleName": "DrawingSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : DrawingSDK.Drawable>",
+                "sugared_genericSig": "<Self where Self : DrawingSDK.Drawable>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10DrawingSDK8DrawableP9lineWidth14CoreFoundation7CGFloatVvM",
+                "mangledName": "$s10DrawingSDK8DrawableP9lineWidth12CoreGraphics7CGFloatVvM",
+                "moduleName": "DrawingSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : DrawingSDK.Drawable>",
+                "sugared_genericSig": "<Self where Self : DrawingSDK.Drawable>",
+                "protocolReq": true,
+                "implicit": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "path",
+            "printedName": "path()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Path",
+                "printedName": "SwiftUI.Path",
+                "usr": "s:7SwiftUI4PathV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10DrawingSDK8DrawableP4path7SwiftUI4PathVyF",
+            "mangledName": "$s10DrawingSDK8DrawableP4path7SwiftUI4PathVyF",
+            "moduleName": "DrawingSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : DrawingSDK.Drawable>",
+            "sugared_genericSig": "<Self where Self : DrawingSDK.Drawable>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "contains",
+            "printedName": "contains(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGPoint",
+                "printedName": "CoreFoundation.CGPoint",
+                "usr": "c:@S@CGPoint"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10DrawingSDK8DrawableP8containsySbSo7CGPointVF",
+            "mangledName": "$s10DrawingSDK8DrawableP8containsySbSo7CGPointVF",
+            "moduleName": "DrawingSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : DrawingSDK.Drawable>",
+            "sugared_genericSig": "<Self where Self : DrawingSDK.Drawable>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "move",
+            "printedName": "move(by:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGSize",
+                "printedName": "CoreFoundation.CGSize",
+                "usr": "c:@S@CGSize"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10DrawingSDK8DrawableP4move2byySo6CGSizeV_tF",
+            "mangledName": "$s10DrawingSDK8DrawableP4move2byySo6CGSizeV_tF",
+            "moduleName": "DrawingSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : DrawingSDK.Drawable>",
+            "sugared_genericSig": "<Self where Self : DrawingSDK.Drawable>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Mutating"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "Mutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:10DrawingSDK8DrawableP",
+        "mangledName": "$s10DrawingSDK8DrawableP",
+        "moduleName": "DrawingSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DrawingPlugin",
+        "printedName": "DrawingPlugin",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "name",
+            "printedName": "name",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10DrawingSDK0A6PluginP4nameSSvp",
+            "mangledName": "$s10DrawingSDK0A6PluginP4nameSSvp",
+            "moduleName": "DrawingSDK",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10DrawingSDK0A6PluginP4nameSSvg",
+                "mangledName": "$s10DrawingSDK0A6PluginP4nameSSvg",
+                "moduleName": "DrawingSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : DrawingSDK.DrawingPlugin>",
+                "sugared_genericSig": "<Self where Self : DrawingSDK.DrawingPlugin>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "iconName",
+            "printedName": "iconName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10DrawingSDK0A6PluginP8iconNameSSvp",
+            "mangledName": "$s10DrawingSDK0A6PluginP8iconNameSSvp",
+            "moduleName": "DrawingSDK",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10DrawingSDK0A6PluginP8iconNameSSvg",
+                "mangledName": "$s10DrawingSDK0A6PluginP8iconNameSSvg",
+                "moduleName": "DrawingSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : DrawingSDK.DrawingPlugin>",
+                "sugared_genericSig": "<Self where Self : DrawingSDK.DrawingPlugin>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "create",
+            "printedName": "create(at:color:width:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Drawable",
+                "printedName": "any DrawingSDK.Drawable",
+                "usr": "s:10DrawingSDK8DrawableP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGPoint",
+                "printedName": "CoreFoundation.CGPoint",
+                "usr": "c:@S@CGPoint"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Color",
+                "printedName": "SwiftUI.Color",
+                "usr": "s:7SwiftUI5ColorV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10DrawingSDK0A6PluginP6create2at5color5widthAA8Drawable_pSo7CGPointV_7SwiftUI5ColorV14CoreFoundation7CGFloatVtF",
+            "mangledName": "$s10DrawingSDK0A6PluginP6create2at5color5widthAA8Drawable_pSo7CGPointV_7SwiftUI5ColorV12CoreGraphics7CGFloatVtF",
+            "moduleName": "DrawingSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : DrawingSDK.DrawingPlugin>",
+            "sugared_genericSig": "<Self where Self : DrawingSDK.DrawingPlugin>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "update",
+            "printedName": "update(_:to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Drawable",
+                "printedName": "any DrawingSDK.Drawable",
+                "usr": "s:10DrawingSDK8DrawableP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Drawable",
+                "printedName": "any DrawingSDK.Drawable",
+                "usr": "s:10DrawingSDK8DrawableP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGPoint",
+                "printedName": "CoreFoundation.CGPoint",
+                "usr": "c:@S@CGPoint"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10DrawingSDK0A6PluginP6update_2toAA8Drawable_pAaF_p_So7CGPointVtF",
+            "mangledName": "$s10DrawingSDK0A6PluginP6update_2toAA8Drawable_pAaF_p_So7CGPointVtF",
+            "moduleName": "DrawingSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : DrawingSDK.DrawingPlugin>",
+            "sugared_genericSig": "<Self where Self : DrawingSDK.DrawingPlugin>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:10DrawingSDK0A6PluginP",
+        "mangledName": "$s10DrawingSDK0A6PluginP",
+        "moduleName": "DrawingSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": []
+}

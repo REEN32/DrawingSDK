@@ -31,7 +31,7 @@ struct AnyLine: Drawable {
 
 @objc(AnyLinePlugin)
 public class AnyLinePlugin: NSObject, DrawingPlugin {
-    public var name: String = "pen"
+    public var name: String = "Карандаш"
     public var iconName: String = "pencil"
     
     public func create(at point: CGPoint, color: Color, width: CGFloat) -> any Drawable {
@@ -42,5 +42,9 @@ public class AnyLinePlugin: NSObject, DrawingPlugin {
         var line = shape as! AnyLine
         line.points.append(point)
         return line
+    }
+    
+    public required override init() {
+            super.init()
     }
 }

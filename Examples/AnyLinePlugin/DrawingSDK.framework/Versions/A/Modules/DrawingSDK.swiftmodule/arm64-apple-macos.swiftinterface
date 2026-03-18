@@ -19,4 +19,5 @@ public protocol DrawingPlugin {
   var iconName: Swift.String { get }
   func create(at point: CoreFoundation.CGPoint, color: SwiftUICore.Color, width: CoreFoundation.CGFloat) -> any DrawingSDK.Drawable
   func update(_ shape: any DrawingSDK.Drawable, to point: CoreFoundation.CGPoint) -> any DrawingSDK.Drawable
+  init()
 }

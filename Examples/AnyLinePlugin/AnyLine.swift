@@ -4,7 +4,9 @@ import SwiftUI
 struct AnyLine: Drawable {
     var points: [CGPoint]
     var color: Color
+    var fillColor: Color
     var lineWidth: CGFloat
+    var isFilled: Bool
     
     func path() -> Path {
         var path = Path()
@@ -34,8 +36,8 @@ public class AnyLinePlugin: NSObject, DrawingPlugin {
     public var name: String = "Карандаш"
     public var iconName: String = "pencil"
     
-    public func create(at point: CGPoint, color: Color, width: CGFloat) -> any Drawable {
-        return AnyLine(points: [point], color: color, lineWidth: width)
+    public func create(at point: CGPoint, color: Color, width: CGFloat, filled: Bool, fillColor: Color) -> any Drawable {
+        return AnyLine(points: [point], color: color, fillColor: fillColor, lineWidth: width, isFilled: filled)
     }
     
     public func update(_ shape: any Drawable, to point: CGPoint) -> any Drawable {

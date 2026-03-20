@@ -5,7 +5,9 @@ struct RectangleShape: Drawable {
     var startPoint: CGPoint
     var endPoint: CGPoint
     var color: Color
+    var fillColor: Color
     var lineWidth: CGFloat
+    var isFilled: Bool
     
     func path() -> Path {
         var path = Path()
@@ -39,8 +41,8 @@ public class RectangleShapePlugin: NSObject, DrawingPlugin {
         super.init()
     }
     
-    public func create(at point: CGPoint, color: Color, width: CGFloat) -> any Drawable {
-        return RectangleShape(startPoint: point, endPoint: point, color: color, lineWidth: width)
+    public func create(at point: CGPoint, color: Color, width: CGFloat, filled: Bool, fillColor: Color) -> any Drawable {
+        return RectangleShape(startPoint: point, endPoint: point, color: color, fillColor: fillColor, lineWidth: width, isFilled: filled)
     }
     
     public func update(_ shape: any Drawable, to point: CGPoint) -> any Drawable {

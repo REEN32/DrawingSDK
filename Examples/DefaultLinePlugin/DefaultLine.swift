@@ -5,7 +5,9 @@ struct DefaultLine: Drawable {
     var startPoint: CGPoint
     var endPoint: CGPoint
     var color: Color
+    var fillColor: Color
     var lineWidth: CGFloat
+    var isFilled: Bool
     
     func path() -> Path {
         var path = Path()
@@ -50,8 +52,8 @@ public class DefaultLinePlugin: NSObject ,DrawingPlugin {
     public var name: String = "Линия"
     public var iconName: String = "line.diagonal"
     
-    public func create(at point: CGPoint, color: Color, width: CGFloat) -> any Drawable {
-        return DefaultLine(startPoint: point, endPoint: point, color: color, lineWidth: width)
+    public func create(at point: CGPoint, color: Color, width: CGFloat, filled: Bool, fillColor: Color) -> any Drawable {
+        return DefaultLine(startPoint: point, endPoint: point, color: color, fillColor: fillColor, lineWidth: width, isFilled: filled)
     }
     
     public func update(_ shape: any Drawable, to point: CGPoint) -> any Drawable {

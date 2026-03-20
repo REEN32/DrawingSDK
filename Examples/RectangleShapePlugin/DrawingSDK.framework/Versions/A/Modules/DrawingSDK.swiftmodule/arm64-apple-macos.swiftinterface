@@ -9,7 +9,9 @@ import _StringProcessing
 import _SwiftConcurrencyShims
 public protocol Drawable {
   var color: SwiftUICore.Color { get set }
+  var fillColor: SwiftUICore.Color { get set }
   var lineWidth: CoreFoundation.CGFloat { get set }
+  var isFilled: Swift.Bool { get set }
   func path() -> SwiftUICore.Path
   func contains(_ point: CoreFoundation.CGPoint) -> Swift.Bool
   mutating func move(by offset: CoreFoundation.CGSize)
@@ -17,7 +19,7 @@ public protocol Drawable {
 public protocol DrawingPlugin {
   var name: Swift.String { get }
   var iconName: Swift.String { get }
-  func create(at point: CoreFoundation.CGPoint, color: SwiftUICore.Color, width: CoreFoundation.CGFloat) -> any DrawingSDK.Drawable
+  func create(at point: CoreFoundation.CGPoint, color: SwiftUICore.Color, width: CoreFoundation.CGFloat, filled: Swift.Bool, fillColor: SwiftUICore.Color) -> any DrawingSDK.Drawable
   func update(_ shape: any DrawingSDK.Drawable, to point: CoreFoundation.CGPoint) -> any DrawingSDK.Drawable
   init()
 }

@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DE5B29262F6AFB6600E1204A /* DrawingSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE5B29242F6AFB6000E1204A /* DrawingSDK.framework */; };
 		DE5B292A2F6AFB8800E1204A /* RectangleShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5B29292F6AFB8800E1204A /* RectangleShape.swift */; };
+		DE7F43252F6D730900D88A80 /* DrawingSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE7F43242F6D730900D88A80 /* DrawingSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DE5B291D2F6AFB5100E1204A /* RectangleShapePlugin.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RectangleShapePlugin.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		DE5B29242F6AFB6000E1204A /* DrawingSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DrawingSDK.framework; sourceTree = "<group>"; };
 		DE5B29292F6AFB8800E1204A /* RectangleShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleShape.swift; sourceTree = "<group>"; };
+		DE7F43242F6D730900D88A80 /* DrawingSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DrawingSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -22,7 +22,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE5B29262F6AFB6600E1204A /* DrawingSDK.framework in Frameworks */,
+				DE7F43252F6D730900D88A80 /* DrawingSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -33,7 +33,7 @@
 			isa = PBXGroup;
 			children = (
 				DE5B29292F6AFB8800E1204A /* RectangleShape.swift */,
-				DE5B29242F6AFB6000E1204A /* DrawingSDK.framework */,
+				DE7F43242F6D730900D88A80 /* DrawingSDK.framework */,
 				DE5B291E2F6AFB5100E1204A /* Products */,
 			);
 			sourceTree = "<group>";

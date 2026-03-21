@@ -9,6 +9,7 @@ public protocol Drawable {
     
     var height: CGFloat { get }
     var width: CGFloat { get }
+    var rotation: CGFloat { get set }
     
     func path() -> Path
     func selectionPath() -> Path
@@ -22,7 +23,7 @@ public protocol DrawingPlugin {
     var name: String { get }
     var iconName: String { get }
     
-    func create(at point: CGPoint, color: Color, width: CGFloat, filled: Bool, fillColor: Color) -> any Drawable
+    func create(at point: CGPoint, color: Color, width: CGFloat, rotationAngle: CGFloat, filled: Bool, fillColor: Color) -> any Drawable
     func update(_ shape: any Drawable, to point: CGPoint) -> any Drawable
     
     init()

@@ -1,7 +1,7 @@
 import SwiftUI
 
 public protocol Drawable {
-    var id: UUID { get }
+    var id: UUID { get set }
     var color: Color { get set }
     var fillColor: Color { get set }
     var lineWidth: CGFloat { get set }

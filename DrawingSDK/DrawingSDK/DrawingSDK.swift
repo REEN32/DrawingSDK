@@ -1,14 +1,21 @@
 import SwiftUI
 
 public protocol Drawable {
+    var id: UUID { get }
     var color: Color { get set }
     var fillColor: Color { get set }
     var lineWidth: CGFloat { get set }
     var isFilled: Bool { get set }
     
+    var height: CGFloat { get }
+    var width: CGFloat { get }
+    
     func path() -> Path
+    func selectionPath() -> Path
+    func fillPath() -> Path
     func contains(_ point: CGPoint) -> Bool
     mutating func move(by offset: CGSize)
+    mutating func resize(xOffset: CGFloat, yOffset: CGFloat)
 }
 
 public protocol DrawingPlugin {

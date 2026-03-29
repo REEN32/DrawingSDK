@@ -15,21 +15,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ndblrDu4HzmAy8WsQsC8jMj2vt2+DDjGeSjbyA9SV5g=
+			SB1nYnOG7J8bdmCLwNz6MDlp/wQ43k5upAiXySPKlTA=
 			</data>
 		</dict>
 		<key>Modules/DrawingSDK.swiftmodule/arm64-apple-macos.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			pueHHAyNfZT1HzsSVvOycvE/FY2vMiwyczTfRL2tpyY=
+			z8nhispMf4fCCxTXb0/wuA1NDocCljC4aM5sjmSmKP0=
 			</data>
 		</dict>
 		<key>Modules/DrawingSDK.swiftmodule/arm64-apple-macos.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			O709QKmS8ibFnZPB1WIIX7+HLTltX0R+Qa41Tpt5/fs=
+			7hJ8y7y1wGJ/1kJl0EtVaM9AboCxN8Cb9AlCFzKC+Zc=
 			</data>
 		</dict>
 		<key>Modules/DrawingSDK.swiftmodule/arm64-apple-macos.swiftdoc</key>
@@ -43,14 +43,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			O709QKmS8ibFnZPB1WIIX7+HLTltX0R+Qa41Tpt5/fs=
+			7hJ8y7y1wGJ/1kJl0EtVaM9AboCxN8Cb9AlCFzKC+Zc=
 			</data>
 		</dict>
 		<key>Modules/DrawingSDK.swiftmodule/arm64-apple-macos.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zpY0vad8qDIiy3CWBKjgXg6BTSwx+/AE5H6yeA636MU=
+			V2EEtZ1NpaVb9fAN/8IMTzzSDSUv9o2KhGMtgsmetZs=
 			</data>
 		</dict>
 		<key>Resources/Info.plist</key>

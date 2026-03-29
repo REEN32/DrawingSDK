@@ -18,6 +18,97 @@
         "children": [
           {
             "kind": "Var",
+            "name": "id",
+            "printedName": "id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UUID",
+                "printedName": "Foundation.UUID",
+                "usr": "s:10Foundation4UUIDV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10DrawingSDK8DrawableP2id10Foundation4UUIDVvp",
+            "mangledName": "$s10DrawingSDK8DrawableP2id10Foundation4UUIDVvp",
+            "moduleName": "DrawingSDK",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UUID",
+                    "printedName": "Foundation.UUID",
+                    "usr": "s:10Foundation4UUIDV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10DrawingSDK8DrawableP2id10Foundation4UUIDVvg",
+                "mangledName": "$s10DrawingSDK8DrawableP2id10Foundation4UUIDVvg",
+                "moduleName": "DrawingSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : DrawingSDK.Drawable>",
+                "sugared_genericSig": "<Self where Self : DrawingSDK.Drawable>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UUID",
+                    "printedName": "Foundation.UUID",
+                    "usr": "s:10Foundation4UUIDV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10DrawingSDK8DrawableP2id10Foundation4UUIDVvs",
+                "mangledName": "$s10DrawingSDK8DrawableP2id10Foundation4UUIDVvs",
+                "moduleName": "DrawingSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : DrawingSDK.Drawable>",
+                "sugared_genericSig": "<Self where Self : DrawingSDK.Drawable>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10DrawingSDK8DrawableP2id10Foundation4UUIDVvM",
+                "mangledName": "$s10DrawingSDK8DrawableP2id10Foundation4UUIDVvM",
+                "moduleName": "DrawingSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : DrawingSDK.Drawable>",
+                "sugared_genericSig": "<Self where Self : DrawingSDK.Drawable>",
+                "protocolReq": true,
+                "implicit": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "color",
             "printedName": "color",
             "children": [
@@ -381,6 +472,181 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "height",
+            "printedName": "height",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10DrawingSDK8DrawableP6height14CoreFoundation7CGFloatVvp",
+            "mangledName": "$s10DrawingSDK8DrawableP6height12CoreGraphics7CGFloatVvp",
+            "moduleName": "DrawingSDK",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10DrawingSDK8DrawableP6height14CoreFoundation7CGFloatVvg",
+                "mangledName": "$s10DrawingSDK8DrawableP6height12CoreGraphics7CGFloatVvg",
+                "moduleName": "DrawingSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : DrawingSDK.Drawable>",
+                "sugared_genericSig": "<Self where Self : DrawingSDK.Drawable>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "width",
+            "printedName": "width",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10DrawingSDK8DrawableP5width14CoreFoundation7CGFloatVvp",
+            "mangledName": "$s10DrawingSDK8DrawableP5width12CoreGraphics7CGFloatVvp",
+            "moduleName": "DrawingSDK",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10DrawingSDK8DrawableP5width14CoreFoundation7CGFloatVvg",
+                "mangledName": "$s10DrawingSDK8DrawableP5width12CoreGraphics7CGFloatVvg",
+                "moduleName": "DrawingSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : DrawingSDK.Drawable>",
+                "sugared_genericSig": "<Self where Self : DrawingSDK.Drawable>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "rotation",
+            "printedName": "rotation",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10DrawingSDK8DrawableP8rotation14CoreFoundation7CGFloatVvp",
+            "mangledName": "$s10DrawingSDK8DrawableP8rotation12CoreGraphics7CGFloatVvp",
+            "moduleName": "DrawingSDK",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10DrawingSDK8DrawableP8rotation14CoreFoundation7CGFloatVvg",
+                "mangledName": "$s10DrawingSDK8DrawableP8rotation12CoreGraphics7CGFloatVvg",
+                "moduleName": "DrawingSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : DrawingSDK.Drawable>",
+                "sugared_genericSig": "<Self where Self : DrawingSDK.Drawable>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10DrawingSDK8DrawableP8rotation14CoreFoundation7CGFloatVvs",
+                "mangledName": "$s10DrawingSDK8DrawableP8rotation12CoreGraphics7CGFloatVvs",
+                "moduleName": "DrawingSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : DrawingSDK.Drawable>",
+                "sugared_genericSig": "<Self where Self : DrawingSDK.Drawable>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10DrawingSDK8DrawableP8rotation14CoreFoundation7CGFloatVvM",
+                "mangledName": "$s10DrawingSDK8DrawableP8rotation12CoreGraphics7CGFloatVvM",
+                "moduleName": "DrawingSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : DrawingSDK.Drawable>",
+                "sugared_genericSig": "<Self where Self : DrawingSDK.Drawable>",
+                "protocolReq": true,
+                "implicit": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Function",
             "name": "path",
             "printedName": "path()",
@@ -395,6 +661,50 @@
             "declKind": "Func",
             "usr": "s:10DrawingSDK8DrawableP4path7SwiftUI4PathVyF",
             "mangledName": "$s10DrawingSDK8DrawableP4path7SwiftUI4PathVyF",
+            "moduleName": "DrawingSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : DrawingSDK.Drawable>",
+            "sugared_genericSig": "<Self where Self : DrawingSDK.Drawable>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "selectionPath",
+            "printedName": "selectionPath()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Path",
+                "printedName": "SwiftUI.Path",
+                "usr": "s:7SwiftUI4PathV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10DrawingSDK8DrawableP13selectionPath7SwiftUI0E0VyF",
+            "mangledName": "$s10DrawingSDK8DrawableP13selectionPath7SwiftUI0E0VyF",
+            "moduleName": "DrawingSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : DrawingSDK.Drawable>",
+            "sugared_genericSig": "<Self where Self : DrawingSDK.Drawable>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "fillPath",
+            "printedName": "fillPath()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Path",
+                "printedName": "SwiftUI.Path",
+                "usr": "s:7SwiftUI4PathV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10DrawingSDK8DrawableP8fillPath7SwiftUI0E0VyF",
+            "mangledName": "$s10DrawingSDK8DrawableP8fillPath7SwiftUI0E0VyF",
             "moduleName": "DrawingSDK",
             "genericSig": "<τ_0_0 where τ_0_0 : DrawingSDK.Drawable>",
             "sugared_genericSig": "<Self where Self : DrawingSDK.Drawable>",
@@ -450,6 +760,42 @@
             "declKind": "Func",
             "usr": "s:10DrawingSDK8DrawableP4move2byySo6CGSizeV_tF",
             "mangledName": "$s10DrawingSDK8DrawableP4move2byySo6CGSizeV_tF",
+            "moduleName": "DrawingSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : DrawingSDK.Drawable>",
+            "sugared_genericSig": "<Self where Self : DrawingSDK.Drawable>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Mutating"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "Mutating"
+          },
+          {
+            "kind": "Function",
+            "name": "resize",
+            "printedName": "resize(xOffset:yOffset:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10DrawingSDK8DrawableP6resize7xOffset01yE0y14CoreFoundation7CGFloatV_AItF",
+            "mangledName": "$s10DrawingSDK8DrawableP6resize7xOffset01yE0y12CoreGraphics7CGFloatV_AItF",
             "moduleName": "DrawingSDK",
             "genericSig": "<τ_0_0 where τ_0_0 : DrawingSDK.Drawable>",
             "sugared_genericSig": "<Self where Self : DrawingSDK.Drawable>",
@@ -577,7 +923,7 @@
           {
             "kind": "Function",
             "name": "create",
-            "printedName": "create(at:color:width:filled:fillColor:)",
+            "printedName": "create(at:color:width:rotationAngle:filled:fillColor:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -605,6 +951,12 @@
               },
               {
                 "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              },
+              {
+                "kind": "TypeNominal",
                 "name": "Bool",
                 "printedName": "Swift.Bool",
                 "usr": "s:Sb"
@@ -617,8 +969,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:10DrawingSDK0A6PluginP6create2at5color5width6filled9fillColorAA8Drawable_pSo7CGPointV_7SwiftUI0J0V14CoreFoundation7CGFloatVSbAOtF",
-            "mangledName": "$s10DrawingSDK0A6PluginP6create2at5color5width6filled9fillColorAA8Drawable_pSo7CGPointV_7SwiftUI0J0V12CoreGraphics7CGFloatVSbAOtF",
+            "usr": "s:10DrawingSDK0A6PluginP6create2at5color5width13rotationAngle6filled9fillColorAA8Drawable_pSo7CGPointV_7SwiftUI0L0V14CoreFoundation7CGFloatVASSbAPtF",
+            "mangledName": "$s10DrawingSDK0A6PluginP6create2at5color5width13rotationAngle6filled9fillColorAA8Drawable_pSo7CGPointV_7SwiftUI0L0V12CoreGraphics7CGFloatVASSbAPtF",
             "moduleName": "DrawingSDK",
             "genericSig": "<τ_0_0 where τ_0_0 : DrawingSDK.DrawingPlugin>",
             "sugared_genericSig": "<Self where Self : DrawingSDK.DrawingPlugin>",

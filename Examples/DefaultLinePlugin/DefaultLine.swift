@@ -2,6 +2,7 @@ import DrawingSDK
 import SwiftUI
 
 struct DefaultLine: Drawable {
+    let id: UUID = UUID()
     var startPoint: CGPoint
     var endPoint: CGPoint
     var color: Color

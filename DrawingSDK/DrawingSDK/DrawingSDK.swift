@@ -6,6 +6,7 @@ public protocol Drawable {
     var fillColor: Color { get set }
     var lineWidth: CGFloat { get set }
     var isFilled: Bool { get set }
+    var layerID: UUID { get set }
     
     var height: CGFloat { get }
     var width: CGFloat { get }
@@ -23,7 +24,7 @@ public protocol DrawingPlugin {
     var name: String { get }
     var iconName: String { get }
     
-    func create(at point: CGPoint, color: Color, width: CGFloat, rotationAngle: CGFloat, filled: Bool, fillColor: Color) -> any Drawable
+    func create(at point: CGPoint, color: Color, width: CGFloat, rotationAngle: CGFloat, filled: Bool, fillColor: Color, layerID: UUID) -> any Drawable
     func update(_ shape: any Drawable, to point: CGPoint) -> any Drawable
     
     init()

@@ -2,6 +2,7 @@ import DrawingSDK
 import SwiftUI
 
 struct AnyLine: Drawable {
+    let id: UUID = UUID()
     var points: [CGPoint]
     var color: Color
     var fillColor: Color
@@ -12,6 +13,10 @@ struct AnyLine: Drawable {
         var path = Path()
         path.addLines(points)
         return path
+    }
+    
+    func selectionPath() -> Path {
+        
     }
     
     func contains(_ point: CGPoint) -> Bool {

@@ -7,12 +7,34 @@ import SwiftUI
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-public protocol Drawable {
+public struct CodableColor : Swift.Codable {
+  public var red: CoreFoundation.CGFloat
+  public var green: CoreFoundation.CGFloat
+  public var blue: CoreFoundation.CGFloat
+  public var alpha: CoreFoundation.CGFloat
+  public init(_ color: SwiftUICore.Color)
+  public var swiftUIColor: SwiftUICore.Color {
+    get
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers public class ShapeRegistry {
+  public static let shared: DrawingSDK.ShapeRegistry
+  public func register<T>(_ type: T.Type, for typeName: Swift.String) where T : DrawingSDK.Drawable
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func getType(for typeName: Swift.String) -> (any DrawingSDK.Drawable.Type)?
+  #endif
+  @objc deinit
+}
+public protocol Drawable : Swift.Decodable, Swift.Encodable {
+  var typeName: Swift.String { get }
   var id: Foundation.UUID { get set }
   var color: SwiftUICore.Color { get set }
   var fillColor: SwiftUICore.Color { get set }
   var lineWidth: CoreFoundation.CGFloat { get set }
   var isFilled: Swift.Bool { get set }
+  var layerID: Foundation.UUID { get set }
   var height: CoreFoundation.CGFloat { get }
   var width: CoreFoundation.CGFloat { get }
   var rotation: CoreFoundation.CGFloat { get set }
@@ -23,10 +45,16 @@ public protocol Drawable {
   mutating func move(by offset: CoreFoundation.CGSize)
   mutating func resize(xOffset: CoreFoundation.CGFloat, yOffset: CoreFoundation.CGFloat)
 }
+public struct AnyDrawable : Swift.Codable {
+  public let shape: any DrawingSDK.Drawable
+  public init(_ shape: any DrawingSDK.Drawable)
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+}
 public protocol DrawingPlugin {
   var name: Swift.String { get }
   var iconName: Swift.String { get }
-  func create(at point: CoreFoundation.CGPoint, color: SwiftUICore.Color, width: CoreFoundation.CGFloat, rotationAngle: CoreFoundation.CGFloat, filled: Swift.Bool, fillColor: SwiftUICore.Color) -> any DrawingSDK.Drawable
+  func create(at point: CoreFoundation.CGPoint, color: SwiftUICore.Color, width: CoreFoundation.CGFloat, rotationAngle: CoreFoundation.CGFloat, filled: Swift.Bool, fillColor: SwiftUICore.Color, layerID: Foundation.UUID) -> any DrawingSDK.Drawable
   func update(_ shape: any DrawingSDK.Drawable, to point: CoreFoundation.CGPoint) -> any DrawingSDK.Drawable
   init()
 }

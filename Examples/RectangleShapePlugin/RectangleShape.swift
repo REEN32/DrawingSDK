@@ -2,11 +2,36 @@ import DrawingSDK
 import SwiftUI
 
 struct RectangleShape: Drawable {
+    init(id: UUID = UUID(), startPoint: CGPoint, endPoint: CGPoint, color: Color, fillColor: Color, lineWidth: CGFloat, isFilled: Bool, layerID: UUID, rotation: CGFloat) {
+        self.id = id
+        self.startPoint = startPoint
+        self.endPoint = endPoint
+        self._color = CodableColor(color)
+        self._fillColor = CodableColor(fillColor)
+        self.lineWidth = lineWidth
+        self.isFilled = isFilled
+        self.layerID = layerID
+        self.rotation = rotation
+    }
+    
+    var typeName: String { "rectangle" }
     var id: UUID = UUID()
     var startPoint: CGPoint
     var endPoint: CGPoint
-    var color: Color
-    var fillColor: Color
+    
+    private var _color: CodableColor
+    private var _fillColor: CodableColor
+    
+    var color: Color {
+        get { _color.swiftUIColor }
+        set { _color = CodableColor(newValue) }
+    }
+    
+    var fillColor: Color {
+        get { _fillColor.swiftUIColor }
+        set { _fillColor = CodableColor(newValue) }
+    }
+    
     var lineWidth: CGFloat
     var isFilled: Bool
     var layerID: UUID
@@ -67,6 +92,8 @@ public class RectangleShapePlugin: NSObject, DrawingPlugin {
     
     public required override init() {
         super.init()
+        
+        ShapeRegistry.shared.register(RectangleShape.self, for: "rectangle")
     }
     
     public func create(at point: CGPoint, color: Color, width: CGFloat, rotationAngle: CGFloat, filled: Bool, fillColor: Color, layerID: UUID) -> any Drawable {

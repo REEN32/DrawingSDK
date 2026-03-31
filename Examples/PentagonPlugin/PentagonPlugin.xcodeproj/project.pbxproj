@@ -6,8 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		DE665EB92F7BA1DB00B1E946 /* DrawingSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE665EB82F7BA1DB00B1E946 /* DrawingSDK.framework */; };
+		DE665EBD2F7BA1ED00B1E946 /* PentagonPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE665EBC2F7BA1ED00B1E946 /* PentagonPlugin.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		DE026E912F7BA1A900521A87 /* PentagonPlugin.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PentagonPlugin.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE665EB82F7BA1DB00B1E946 /* DrawingSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DrawingSDK.framework; sourceTree = "<group>"; };
+		DE665EBC2F7BA1ED00B1E946 /* PentagonPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PentagonPlugin.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -15,6 +22,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE665EB92F7BA1DB00B1E946 /* DrawingSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -24,6 +32,8 @@
 		DE026E882F7BA1A900521A87 = {
 			isa = PBXGroup;
 			children = (
+				DE665EBC2F7BA1ED00B1E946 /* PentagonPlugin.swift */,
+				DE665EB72F7BA1DB00B1E946 /* Frameworks */,
 				DE026E922F7BA1A900521A87 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -34,6 +44,14 @@
 				DE026E912F7BA1A900521A87 /* PentagonPlugin.bundle */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		DE665EB72F7BA1DB00B1E946 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DE665EB82F7BA1DB00B1E946 /* DrawingSDK.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -69,6 +87,7 @@
 				TargetAttributes = {
 					DE026E902F7BA1A900521A87 = {
 						CreatedOnToolsVersion = 26.1.1;
+						LastSwiftMigration = 2610;
 					};
 				};
 			};
@@ -106,6 +125,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE665EBD2F7BA1ED00B1E946 /* PentagonPlugin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,10 +252,15 @@
 		DE026E962F7BA1A900521A87 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Y9UBM27R4F;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSPrincipalClass = "";
@@ -246,6 +271,8 @@
 				SKIP_INSTALL = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
@@ -253,10 +280,15 @@
 		DE026E972F7BA1A900521A87 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Y9UBM27R4F;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSPrincipalClass = "";
@@ -267,6 +299,7 @@
 				SKIP_INSTALL = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
